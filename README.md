@@ -1,6 +1,10 @@
 # Fast_SFT
 ![Fast_SFT](assets/title.png)
 
+<p align="center">
+   📃 <a href="https://eegb6fzscd.feishu.cn/wiki/XTMBwrMBgii6nnkqNsLcZHxznLE?from=from_copylink" target="_blank">Doc</a> 
+</p>
+
 - Fast LLM SFT CodeBase [Zero+Megatron+FlashAtten+compiler]; 
 - With dynamic strategy choosing
 
