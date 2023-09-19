@@ -48,7 +48,7 @@ ds_args=" --zero-stage=$ZERO_STAGE ${ds_args}"
 ds_args=" --deepspeed-activation-checkpointing ${ds_args}"
 
 
-deepspeed pretrain_gpt.py \
+deepspeed ./src/pretrain.py \
     --tensor-model-parallel-size $TP \
     --pipeline-model-parallel-size $PP \
     --num-layers $NLAYERS \
