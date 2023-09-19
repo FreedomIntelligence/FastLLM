@@ -132,8 +132,8 @@ python /src/tools/convert_checkpoint/deepspeed_to_transformers.py  \
 ```
 
 ## To do list
-1. Complete "Prepare Model and Data"
-2. Add 3.pretrain_baichuanxxx.sh
+1. Support Baichuan2.
+2. Support Instruction tuning.
 
 ## Acknowledgement
 - Megatron-DeepSpeed: https://github.com/microsoft/Megatron-DeepSpeed
