@@ -16,6 +16,7 @@ Modify the CONSTANT in pre_train_math.py
 ```
 python 1.pre_train_math.py
 ```
+![pre_math](assets/pre_math.png)
 
 ### 2. Prepare Model and Data
 Under Construction
