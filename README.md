@@ -99,12 +99,12 @@ python /src/tools/convert_checkpoint/deepspeed_to_transformers.py  \
 
 ## Citation
 ```
-@misc{fastsft,
-  title={Fast LLM SFT CodeBase},
+@misc{fastllm,
+  title={Fast LLM Training CodeBase},
   author={Xidong Wang},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/wangxidong06/Fast_SFT}},
+  howpublished = {\url{https://github.com/wangxidong06/Fast_LLM}},
 }
 ```
