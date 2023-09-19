@@ -1,4 +1,5 @@
 # Fast_SFT
+![Fast_SFT](assets/title.png)
 Fast LLM SFT CodeBase [Zero+Megatron+FlashAtten+compiler]; With dynamic strategy choosing
 
 ## How to use
