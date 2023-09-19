@@ -1,4 +1,4 @@
-# Fast_LLM
+# Fast-LLM
 ![Fast_SFT](assets/title.png)
 
 <p align="center">
