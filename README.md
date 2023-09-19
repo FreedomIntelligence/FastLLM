@@ -22,7 +22,7 @@ python 2.py
 ### 3. Train Model
 Modify the CONSTANT in pre_train_math.py
 ```
-python 3.pretrain.py
+bash 3.pretrain_llama2.sh
 ```
 
 ### 4. Calculate TFLOPs.
