@@ -134,6 +134,7 @@ python /src/tools/convert_checkpoint/deepspeed_to_transformers.py  \
 ## To do list
 1. Support Baichuan2.
 2. Support Instruction tuning.
+3. Benchmark TFLOPS with other Repo on different settings
 
 ## Acknowledgement
 - Megatron-DeepSpeed: https://github.com/microsoft/Megatron-DeepSpeed
