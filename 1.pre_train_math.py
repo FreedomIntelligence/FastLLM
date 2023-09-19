@@ -15,13 +15,13 @@ VOCAB_SIZE=125696
 NODE=1
 GPU_PER_NODE=4
 GPU_MEMORY=80
-NGPU=GPU_PER_NODE*NODE
-Gradient_checkpointing=True
-BATCH_SIZE=1
+BATCH_SIZE=8
 BTOKEN=0.7   # Token in Billion
-TFLOPS=140 # [130-170]
+TFLOPS=140   # [130-170]
+Gradient_checkpointing=True # gradient_checkpointing technich: https://medium.com/tensorflow/fitting-larger-networks-into-memory-583e3c758ff9
 
 
+NGPU=GPU_PER_NODE*NODE
 h=NHIDDEN
 l=NLAYERS
 s=SEQ_LEN 
@@ -46,8 +46,8 @@ def main():
     print('-----------With Mixed Precision(bp16)-----------')
     print(f'-----Memory_reference_indicator(Batch_size={b})-----')
     input=(b*s*h)/10**9
-    activation=(b*s*h*11*l)/10**9/3 if Gradient_checkpointing else (b*s*h*11*l)/10**9
-    activation_b1=(s*h*11*l)/10**9
+    activation=math.sqrt((b*s*h*34*l)/10**9) if Gradient_checkpointing else (b*s*h*34*l)/10**9
+    activation_b1=math.sqrt((s*h*34*l)/10**9) if Gradient_checkpointing else (s*h*34*l)/10**9
     input_all=input+activation
     train_memory_factor=2+2+4*3
     total_memory=round(model*train_memory_factor+input_all*2, 2)
