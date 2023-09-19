@@ -16,7 +16,7 @@ Modify the CONSTANT in pre_train_math.py
 ```
 python 1.pre_train_math.py
 ```
-The output of training LLAMA-70B with 6Node*4GPU(80G):
+The output of training LLAMA-70B with 6Node*4GPU(80G) and 0.7B tokens:
 ```
 -----------Model_Size and GPU_Mem-----------
 +--------------+------------------------+----------------------+
