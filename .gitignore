@@ -1,0 +1,9 @@
+# *.txt  ，*.xls  表示过滤某种类型的文件
+# target/ ：表示过滤这个文件夹下的所有文件
+# /test/a.txt ，/test/b.xls  表示指定过滤某个文件下具体文件
+# !*.java , !/dir/test/     !开头表示不过滤
+# *.[ab]    支持通配符：过滤所有以.a或者.b为扩展名的文件
+# /test  仅仅忽略项目根目录下的 test 文件，不包括 child/test等非根目录的test目录
+
+
+/ckpts/*

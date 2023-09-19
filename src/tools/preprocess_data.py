@@ -11,7 +11,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),
 import time
 import gzip
 import glob
-import torch
 import numpy as np
 import multiprocessing
 try:

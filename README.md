@@ -68,6 +68,32 @@ Please find the best batch_size by adjusting BATCH_SIZE
 
 ### 2. Prepare Model and Data
 Under Construction
+#### 2.1 Prepare Model
+- LLAMA:
+  1. Convert LLAMA from Meta format checkpoints to HF format
+    ```
+    python /src/tools/convert_checkpoint/convert_llama_weights_to_hf.py --input_dir $LLAMA_FORMAT_DIR --output_dir $HF_FORMAT_DIR --model_size 7B
+    # --model_size include 7B, 13B, and 70B (for pretrained-only models), and 7Bf, 13Bf, and 70Bf (for chat-finetuned models).
+    ```
+
+  2. Convert HF checkpoints to Megatron format
+    ```
+    python /src/tools/checkpoint/util.py \
+          --model-type GPT \
+          --loader llama2_hf \
+          --saver megatron \
+          --target-tensor-parallel-size ${TP} \
+          --load-dir ${HF_FORMAT_DIR} \
+          --save-dir ${MEGATRON_FORMAT_DIR} \
+          --tokenizer-model ${TOKENIZER_MODEL}
+    ```
+- Others:
+```
+python tools/convert_checkpoint/deepspeed_to_megatron.py --input_folder INPUT_FOLDER --output_folder OUTPUT_FOLDER --target_tp TARGET_TP --target_pp TARGET_PP 
+```
+#### 2.2 Prepare Data
+
+
 
 ### 3. Train Model
 Modify the CONSTANT in 3.pretrain_xxxxxx.sh
@@ -82,6 +108,7 @@ python 4.aft_train_math.py
 ```
 
 ### 5. Transfer model to HF Transformers. 
+
 ```bash
 python /src/tools/convert_checkpoint/deepspeed_to_transformers.py  \
 --input_folder /path/to/checkpoint \
@@ -96,6 +123,8 @@ python /src/tools/convert_checkpoint/deepspeed_to_transformers.py  \
 - Megatron-DeepSpeed: https://github.com/microsoft/Megatron-DeepSpeed
 - DeepSpeed: https://github.com/microsoft/DeepSpeed
 - Megatron-LM: https://github.com/NVIDIA/Megatron-LM
+
+
 
 ## Citation
 ```

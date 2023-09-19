@@ -38,8 +38,8 @@ WEIGHT_DECAY=0.1
 GRAD_CLIP=1
 
 ## Activation checkpointing saves GPU memory, but reduces training speed
-# activation_checkpoint="true"
-activation_checkpoint="false"
+activation_checkpoint="true"
+# activation_checkpoint="false"
 
 # Below configuration required for llama model as per llama paper
 # --no-query-key-layer-scaling \
