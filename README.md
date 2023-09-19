@@ -93,9 +93,9 @@ python /src/tools/convert_checkpoint/deepspeed_to_transformers.py  \
 2. Add 3.pretrain_baichuanxxx.sh
 
 ## Acknowledgement
-Megatron-DeepSpeed: https://github.com/microsoft/Megatron-DeepSpeed
-DeepSpeed: https://github.com/microsoft/DeepSpeed
-Megatron-LM: https://github.com/NVIDIA/Megatron-LM
+- Megatron-DeepSpeed: https://github.com/microsoft/Megatron-DeepSpeed
+- DeepSpeed: https://github.com/microsoft/DeepSpeed
+- Megatron-LM: https://github.com/NVIDIA/Megatron-LM
 
 ## Citation
 ```
