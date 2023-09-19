@@ -5,7 +5,7 @@
    📃 <a href="https://eegb6fzscd.feishu.cn/wiki/XTMBwrMBgii6nnkqNsLcZHxznLE?from=from_copylink" target="_blank">Doc</a> 
 </p>
 
-- Fast LLM Training CodeBase [Deepspeed+Megatron+FlashAttention+CudaFusionKernel+Compiler];; 
+- Fast LLM Training CodeBase [Deepspeed+Megatron+FlashAttention+CudaFusionKernel+Compiler]
 - With dynamic strategy choosing
 
 ## How to use
