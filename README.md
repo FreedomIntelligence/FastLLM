@@ -1,5 +1,5 @@
-# Fastest_SFT
-Fastest LLM SFT CodeBase [Zero+Megatron+FlashAtten+compiler]; With dynamic strategy choosing
+# Fast_SFT
+Fast LLM SFT CodeBase [Zero+Megatron+FlashAtten+compiler]; With dynamic strategy choosing
 
 ## How to use
 1. Get Model size, GPU memory usage, training time and strategy.
