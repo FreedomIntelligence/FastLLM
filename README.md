@@ -92,7 +92,23 @@ Under Construction
 python tools/convert_checkpoint/deepspeed_to_megatron.py --input_folder INPUT_FOLDER --output_folder OUTPUT_FOLDER --target_tp TARGET_TP --target_pp TARGET_PP 
 ```
 #### 2.2 Prepare Data
+Data_item is in jsonl
+```
+{"text": "The quick brown fox"}
+{"text": "jumps over the lazy dog"}
+```
+The name of the text field of the json can be changed by using the --json-key flag in preprocess_data.py. "text" by default
 
+```
+python tools/preprocess_data.py \
+       --input data.json \
+       --output-prefix llama2 \
+       --vocab-file VOCAB_FILE \
+       --dataset-impl mmap \
+       --tokenizer-type GPT2BPETokenizer \
+       --merge-file gpt2-merges.txt \
+       --append-eod
+```
 
 
 ### 3. Train Model
